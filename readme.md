@@ -18,3 +18,9 @@ The rigid body 2D's we added means that they can interact with colliders, while 
 The final part of this tutorial is to add a hinge joint 2D component to your Platform, and then you want to enable 'Use Motor' and then 'Use Limits'. If you set the motor speed and maximum motor force to 1 you can then use the angle limits below to set your angle limits for the amount of tilt, you want to have each way. The lower angle represents how far left and the upper angle represents how far right it can go. 
 
 This method requires no scripting as it uses the gravity used by unity to make the platform tilt depending on where the player is.
+
+
+
+# How to add moevement now
+Now we are going to add movement to our platform when an object with the player tag collides with it. All of it will be code based this time. (needs to be finished.)
+![alt text](image-2.png)
