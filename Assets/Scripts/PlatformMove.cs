@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlatformMove : MonoBehaviour
 {
 
-    public float moveDistance = 5.0f; 
-    public float moveSpeed = 2.0f;
+    [SerializeField] float moveDistance = 5.0f; 
+    [SerializeField] float moveSpeed = 2.0f;
     private Vector3 targetPosition;
     private bool moving = false;
 
@@ -22,7 +22,7 @@ public class PlatformMove : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            targetPosition = new Vector3(transform.position.x + moveDistance, transform.position.y, transform.position.z);
+            targetPosition = new Vector3(transform.position.x, transform.position.y + moveDistance, transform.position.z);
             moving = true;
         }
     }
